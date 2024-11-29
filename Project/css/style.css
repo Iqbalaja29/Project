@@ -1,0 +1,124 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main section styles */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.event-image, .venue-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Button styles */
+button {
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 15px; /* Padding inside button */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1em; /* Font size for buttons */
+    margin-top: 10px; /* Spacing above the button */
+    display: inline-block; /* Make the button inline-block */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .header-image {
+        max-height: 300px; /* Adjust the height for smaller screens */
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Smaller font size for smaller devices */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Smaller font size for smaller devices */
+    }
+
+    button {
+        width: 100%; /* Full-width button on small screens */
+        padding: 10px;
+        font-size: 1em;
+    }
+}
